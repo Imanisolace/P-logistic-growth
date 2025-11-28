@@ -41,7 +41,7 @@ st.sidebar.title("Baseline Scenario")
 
 profiles = {
     "Default": {"K": 1000, "r": 0.2, "P0": 20, "t_max": 50},
-    "High Growth": {"K": 1000, "r": 0.5, "P0": 20, "t_max": 50},
+    "High Growth": {"K": 1000, "r": 0.5, "P0": 20, "t_max": 60},
     "Large Capacity": {"K": 3000, "r": 0.2, "P0": 20, "t_max": 50},
 }
 
