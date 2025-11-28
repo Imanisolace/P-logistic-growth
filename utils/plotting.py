@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plot_logistic(t, P, K, r, c):
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(8, 8))
 
     ax.plot(t, P, color="blue", label="Population")
     ax.axhline(K, linestyle="--", color="red", label="Carrying Capacity")
