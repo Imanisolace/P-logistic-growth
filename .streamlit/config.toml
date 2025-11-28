@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#2196F3"          # blue accent for trust & clarity
+backgroundColor="#FFFFFF"       # clean white background
+secondaryBackgroundColor="#F0F2F6"  # neutral light gray sidebar
+textColor="#000000"             # black text for readability
+font="sans serif"

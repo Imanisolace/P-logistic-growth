@@ -1,0 +1,9 @@
+# Core libraries (pinned for stability)
+streamlit==1.39.0
+matplotlib==3.8.4
+numpy==1.26.4
+
+# Utility libraries (floating but constrained for compatibility)
+pandas>=2.2
+pillow<11,>=10.0.0
+packaging<25,>=24.0
