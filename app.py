@@ -4,10 +4,10 @@ import numpy as np
 from models.logistic import logistic_curve
 from utils.plotting import plot_logistic
 
-# Ensure assets folder exists
+# assets folder 
 os.makedirs("assets", exist_ok=True)
 
-#  Custom CSS tweaks 
+#  Custom CSS
 st.markdown(
     """
     <style>
@@ -67,7 +67,7 @@ baseline_t90 = (1 / baseline["r"]) * np.log(9 * baseline_c)
 # Main layout: 3 columns 
 col_controls, col_plot, col_diag = st.columns([2, 5, 3])
 
-# Controls expander (open by default)
+# Controls expander 
 with col_controls:
     with st.expander("⚙️ Adjust sliders/Parameters", expanded=True):
         c1, c2 = st.columns(2)
@@ -139,9 +139,9 @@ with col_diag:
             except Exception:
                 st.write("⚠️ Could not compute time to 90% capacity.")
 
-        # Right column: parameter recap with color-coded labels
+        # Right column: parameter recap
         with col2:
             st.markdown(f"<span style='color:green'>**Growth Rate (r):**</span> {r}", unsafe_allow_html=True)
             st.markdown(f"<span style='color:red'>**Carrying Capacity (K):**</span> {K}", unsafe_allow_html=True)
             st.markdown(f"<span style='color:blue'>**Initial Pop (P₀):**</span> {P0}", unsafe_allow_html=True)
-            st.markdown(f"<span style='color:purple'>**Time Horizon (tₘₐₓ):**</span> {t_max}", unsafe_allow_html=True)        # Right column: parameter recap with color-coded labels
+            st.markdown(f"<span style='color:purple'>**Time Horizon (tₘₐₓ):**</span> {t_max}", unsafe_allow_html=True)       
